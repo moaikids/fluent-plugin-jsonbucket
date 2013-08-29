@@ -2,7 +2,7 @@
 
 == Overview
 
-*jsonbucket* is an output plugin. this plugin process puts a json/msgpack record into a json bucket.
+*jsonbucket* is a fluentd output plugin. this plugin process puts a json(msgpack) record into a json bucket.
 
 ex. {"a":1, "b":2, "c":3 } -> {"bucket": {"a":1, "b":2, "c":3 } }
 
