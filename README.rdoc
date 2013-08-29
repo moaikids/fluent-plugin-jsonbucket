@@ -1,4 +1,4 @@
-= counter
+= fluent-plugin-jsonbucket
 
 == Overview
 
