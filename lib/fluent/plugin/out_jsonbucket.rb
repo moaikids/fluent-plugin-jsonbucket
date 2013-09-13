@@ -13,6 +13,7 @@ module Fluent
 
         def emit(tag, es, chain)
             es.each {|time,record|
+                chain.next
                 bucket = {@json_key => record.to_json}
                 Fluent::Engine.emit(@output_tag, time, bucket)
             }

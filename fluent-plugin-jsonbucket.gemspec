@@ -1,7 +1,7 @@
 # -*- encoding: utf-8 -*-
 Gem::Specification.new do |gem|
     gem.name        = "fluent-plugin-jsonbucket"
-    gem.version     = "0.0.1"
+    gem.version     = "0.0.2"
     gem.authors     = ["moaikids"]
     gem.summary     = %q{Fluentd plugin}
     gem.description = %q{Fluentd plugin}
