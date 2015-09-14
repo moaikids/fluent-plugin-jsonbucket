@@ -1,4 +1,5 @@
 = fluent-plugin-jsonbucket
+{<img src="https://badge.fury.io/gh/moaikids%2Ffluent-plugin-jsonbucket.svg" alt="GitHub version" />}[http://badge.fury.io/gh/moaikids%2Ffluent-plugin-jsonbucket]
 
 == Overview
 
