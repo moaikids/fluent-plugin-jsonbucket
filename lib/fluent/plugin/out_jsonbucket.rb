@@ -1,3 +1,5 @@
+require "yajl"
+
 module Fluent
     class JsonbucketOutput < Fluent::Output
         Fluent::Plugin.register_output('jsonbucket', self)
@@ -14,7 +16,7 @@ module Fluent
         def emit(tag, es, chain)
             es.each {|time,record|
                 chain.next
-                bucket = {@json_key => record.to_json}
+                bucket = {@json_key => Yajl.dump(record)}
                 Fluent::Engine.emit(@output_tag, time, bucket)
             }
         end 
